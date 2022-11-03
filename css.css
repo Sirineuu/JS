@@ -1,0 +1,205 @@
+:root {
+    --dark-blue: #363f5f;
+    --green: #49AA26;
+    --light-green: #3dd705;
+    --red: #e92929;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif
+}
+
+header{
+    background-color: #00747C;
+    padding: 4%;
+    font-weight: bold;
+    text-align: center;
+}
+#container{
+    width: min(90vw);
+    margin: auto;
+    background-color: #CACACA;
+    margin-top:-2rem;
+    height: auto;
+    
+    
+}
+#table{
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    border-spacing: 0.3rem;
+}
+thead{
+    background-color: #00BBC9;
+}
+th{
+    padding: 0.4rem;
+}
+#table td{
+ background-color: white;
+}
+table thead tr th:first-child, 
+table tbody tr td:first-child
+{
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child, 
+table tbody tr td:last-child{
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+#titulo{
+    color: var(--dark-blue);
+
+    font-weight: normal;
+    text-align: center;
+}
+.add{
+    border: 0;
+    background-color: transparent;
+    padding-left: 1rem;
+}
+.adicionar:hover{
+    opacity: 0.7;
+}
+.btn-btn{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    padding: 2%;
+    margin: 0.4rem;
+}
+.excluir{
+    opacity: 1;
+    width: 100%;
+    height: 30px;
+
+    border: none;
+
+    color: white;
+    background: var(--red);
+
+    padding: 0;
+
+    border-radius: 0.25rem;
+}
+.editar{
+    opacity: 1;
+    width: 100%;
+    height: 30px;
+
+    border: none;
+
+    color: white;
+    background: var(--green);
+
+    padding: 0;
+
+    border-radius: 0.25rem;
+}
+.editar:hover,.excluir:hover{
+    opacity: 0.7;
+}
+/* Modal ===================== */
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background: #F0F2f5;
+    padding: 2.4rem;
+
+    position: relative;
+    z-index: 1;
+}
+/* Form ===================== */
+#form {
+    max-width: 500px;
+}
+
+#form h2 {
+    margin-top: 0;
+}
+
+input {
+    border: none;
+    border-radius: 0.2rem;
+
+    padding: 0.8rem;
+
+    width: 100%;
+}
+
+.input-group {
+    margin-top: 0.8rem;
+}
+
+.input-group .help{
+    opacity: 0.4;
+}
+
+.input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group.actions .button,
+.input-group.actions button {
+    width: 48%;
+}
+.cancel {
+    color: var(--red);
+    border: 2px var(--red) solid;
+    border-radius: 0.25rem;
+
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0.6;
+}
+.salvar{
+    width: 100%;
+    height: 50px;
+
+    border: none;
+
+    color: white;
+    background: var(--green);
+
+    padding: 0;
+
+    border-radius: 0.25rem;
+
+    cursor: pointer;
+}
+

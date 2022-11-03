@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="js.js"></script>
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="assets/logo.svg" alt="Logo" >
+        </div>
+    </header>
+    <main id="container">
+        <div id="titulo">
+            <h1>Cadastro de clientes</h1>
+        </div>
+        
+        <section>
+            <div>
+                <button class="add" onclick="Modal.open()"><img src="assets/plus.svg" alt="add" class="adicionar"></button>
+            </div>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Contato</th>
+                        <th>Cidade</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>gustavo.sirineu12@gmail.com</td>
+                        <td>19989902805</td>
+                        <td>Campinas</td>
+                        <td class="btn-btn"><button class="button editar">Editar</button><button class="button excluir">Excluir</button></td>
+                    </tr>
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>gustavo.sirineu12@gmail.com</td>
+                        <td>19989902805</td>
+                        <td>Campinas</td>
+                        <td class="btn-btn"><button class="button editar">Editar</button><button class="button excluir">Excluir</button></td>
+                    </tr>
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>gustavo.sirineu12@gmail.com</td>
+                        <td>19989902805</td>
+                        <td>Campinas</td>
+                        <td class="btn-btn"><button class="button editar">Editar</button><button class="button excluir">Excluir</button></td>
+                    </tr>
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>gustavo.sirineu12@gmail.com</td>
+                        <td>19989902805</td>
+                        <td>Campinas</td>
+                        <td class="btn-btn"><button class="button editar">Editar</button><button class="button excluir">Excluir</button></td>
+                    </tr>
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>gustavo.sirineu12@gmail.com</td>
+                        <td>19989902805</td>
+                        <td>Campinas</td>
+                        <td class="btn-btn"><button class="button editar">Editar</button><button class="button excluir">Excluir</button></td>
+                    </tr><tr>
+                        <td>Gustavo</td>
+                        <td>gustavo.sirineu12@gmail.com</td>
+                        <td>19989902805</td>
+                        <td>Campinas</td>
+                        <td class="btn-btn"><button class="button editar">Editar</button><button class="button excluir">Excluir</button></td>
+                    </tr>
+                </tbody>       
+            </table>
+        </section>
+    </main>
+    <div class="modal-overlay">
+        <div class="modal">
+            <div id="form">
+                <h2>Cadastro</h2>
+                <form action="" onsubmit="Form.submit(event)">
+                    <div class="input-group">
+                        <label 
+                            class="sr-only" 
+                            for="description">Nome</label>
+                        <input 
+                            type="name" 
+                            id="description" 
+                            name="description"
+                            placeholder="Descrição"
+                        />
+                    </div>
+
+                    <div class="input-group">
+                        <label 
+                            class="sr-only" 
+                            for="amount">E-mail</label>
+                        <input 
+                            type="email"
+                            id="email" 
+                            name="email"
+                            placeholder="dev.finace@gmail.com"
+                        />
+                    </div>
+
+                    <div class="input-group">
+                        <label 
+                            class="sr-only" 
+                            for="date">Contato</label>
+                        <input 
+                            type="tel" 
+                            id="tel" 
+                            name="tel"
+                            placeholder="(00)00000-0000"
+                        />
+                    </div>
+
+                    <div class="input-group">
+                        <label 
+                            class="sr-only" 
+                            for="date">Cidade</label>
+                        <input 
+                            type="text" 
+                            id="city" 
+                            name="city"
+                            placeholder="Campinas"
+                        />
+                    </div>
+                    <div class="input-group actions">
+                        <a 
+                        onclick="Modal.close()"
+                        href="#" 
+                        class="button cancel">Cancelar</a>
+                        <button class="salvar">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</html>
